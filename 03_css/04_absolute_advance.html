@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute position</title>
+    <style>
+     
+        div {
+            border: 2px solid black;    
+        }
+        .parent{
+            position:absolute;
+        }
+
+        .div2{
+           position:absolute;
+           bottom: 0px;
+           right: 0px;
+           background-color: brown;
+
+        }
+
+        .grandparent{
+            position:absolute;
+        }
+
+
+
+    </style>
+    <!-- in absolute the position on div or block is remove -->
+</head>
+<body>
+       <div class="grandparent" style="border: 1px solid orange;">i am the grand parent 
+           <div class="div4"> i am a div 4</div>
+          <div class="parent" > i am a parent div
+
+          <div class="div2"> i am a div 2</div>
+
+                <div> i am a div 3</div>
+
+               <div> i am a div 4</div>
+
+        </div>
+    </div>
+</body>
+</html>
