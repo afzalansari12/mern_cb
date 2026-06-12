@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footr{
+    margin-top: auto;
+}
+.navbar {
+    border: 1px solid black;
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.div-1 {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.div-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-left: 30px;   /* pushes menu to right */
+    font-size: 16px;
+}
+
+.strt {
+    background: black;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 999px;
+    margin: 0;
+}
+.footr{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.div-3 img{
+    margin-right: 0px;
+}
+
+svg{
+    max-width: 100px;
+    height: auto;
+}
+
+.navbar{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+*{
+    /* outline: 1px solid red; */
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.hero-left{
+    width: 50%;
+}
+
+.hero-right{
+    width: 40%;
+}
+
+.hero-right img{
+    width: 100%;
+    height: auto;
+}
+
+.div-3{
+    font-size: 90px;
+    line-height: 0.9;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 288px;
+}
+button{
+    margin-top: 20px;
+}
