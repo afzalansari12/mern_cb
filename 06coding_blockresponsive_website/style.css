@@ -458,3 +458,9 @@
     .cards-row { flex-direction: column; }
     .menu a { font-size: 12px; padding: 10px; }
   }
+
+  .nav-left img{
+    height: 30px;
+    display:flex;
+    justify-content: start;
+  }
