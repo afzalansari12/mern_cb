@@ -1,0 +1,52 @@
+
+1. setup project // create packet.json
+
+ >> npm init // by this it will  ask all things like author name verson description etc.
+ or
+ >> mpm init -y // by this it will not  ask all things like author name verson description etc.
+
+
+
+2. install a package
+ >> npm i write
+ or
+ >> npm install write
+
+
+3.if node_modules don't exists but package.json does
+>> npm i
+
+this will install the dependecies mentioned inside package.json on its own
+
+
+"dependencies": {
+    "write": "^2.0.0"
+  }
+
+  (^)this confirm that this the latest version of package which we are using 
+  and 
+
+  and if we dont use it then it means we are using the exact that version not oldest not latest.
+
+  we call it carrot sign and we can use ~ (tilde) also instead of (^)
+
+  ______________________________________________________________________________________________
+
+  #### INSTALLING EXPRESS JS 
+  1. npm init -y
+  2. mpm i express 
+
+  3 write code app.js 
+
+const express = require('express');
+const app = express();
+
+app.listen(4444);
+
+4. run the code in terminal 
+>> node app.js
+
+5. to not start server everytime we make changes to the code 
+use nodemon instesd of node
+>> npm i -g nodemon 
+// -g means install globally 
