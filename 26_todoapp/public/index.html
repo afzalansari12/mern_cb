@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>todoApp</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>TaskMaster</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Axios is included before script.js file, thus I can use it inside the script -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js"></script>
 
 </head>
+
 <body>
-    <h1 > todo app</h1>
-    <input type="text" placeholder="enter task">
-    <button>Add task</button>
+    <div class="container">
+        <h1>TaskMaster</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task..." required>
+            <button type="submit">Add Task</button>
+        </form>
 
-   <div class="button-group">
+        <div class="filter-buttons">
+            <button id="filter-all" class="active">All</button>
+            <button id="filter-active">Active</button>
+            <button id="filter-completed">Completed</button>
+        </div>
 
-    <button>all</button>
-    <button>active</button>
-    <button>cpmpleted</button>
+        <ul id="task-list">
+            <!-- <li>
+                <span class="task-text">${task.text}</span>
+                <div class="task-actions">
+                    <button class="complete-btn">${task.completed ? 'Undo' : 'Complete'}</button>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </li> -->
+        </ul>
 
-   </div>
-   <ul class="tasklist"></ul>
+        <button id="clear-completed">Clear Completed</button>
+    </div>
 
-   <button>clear completed</button>
-
-   <script src="/script.js"></script>
-
-   
+    <script src="script.js"></script>
 </body>
+
 </html>
