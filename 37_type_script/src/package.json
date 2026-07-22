@@ -1,0 +1,16 @@
+{
+  "name": "37_type_script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1_interfaces_learn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
