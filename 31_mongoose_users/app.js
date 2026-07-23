@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const Todos = require('./models/Todos.model');
-const Users = require('./models/Users.model');
+const Users = require('./models/user.model');
 const PORT = 4444;
 
 app.use(express.static(path.join(__dirname, 'public')))

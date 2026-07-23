@@ -44,7 +44,7 @@ taskList.addEventListener('click', (ev) => {
     let element = ev.target;
     if (element.classList.contains('complete-btn')) {
         let id = element.children[0].innerText;
-
+        console.log(id)
         axios.put('/todos', {
             id
         }).then(({ data }) => {
@@ -79,11 +79,11 @@ function addToTaskList(data) {
             <div class="task-actions">
                 <button class="complete-btn">
                 ${d.status ? 'Undo' : 'Complete'}
-                    <span style='display:none'>${d.id}</span>
+                    <span style='display:none'>${d._id}</span>
                 </button>
                 <!-- <button class="edit-btn">Edit</button> --->
                 <button class="delete-btn">Delete
-                    <span style='display:none'>${d.id}</span>
+                    <span style='display:none'>${d._id}</span>
                 </button>
             </div>`;
 
@@ -96,8 +96,8 @@ function refreshTodos() {
     axios.get('/todos')
         .then(({ data }) => {
             console.log(data);
-            currentTodos = data;
-            addToTaskList(data);
+            currentTodos = data.tasks;
+            addToTaskList(data.tasks);
         })
 }
 
